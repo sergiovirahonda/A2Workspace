@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>A2Workspace</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="box-shadow: 0px -4px 4px 4px;">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><img src="static/img/logo.jpg" style="width: 200px;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/query_affiliate" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Afiliados</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/query_document" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Documentos</a></li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Modificar&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="/modify_document" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Numero de documento</a><a class="dropdown-item" role="presentation" href="/modify_date"
+                                style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Fecha en documento</a></div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/exit" style="font-size: 15px;font-family: Poppins, sans-serif;font-weight: 600;">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <h1 style="font-family: Poppins, sans-serif;font-weight: 600;padding: 50px 0px 0px 0px;color: rgb(62,62,62);">Modificar fecha en documento</h1>
+        </div>
+    </div>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro"></div>
+            <form method="post">
+                <h2 class="text-center" style="font-family: Poppins, sans-serif;font-size: 24px;font-weight: 600;text-align: center;">Ingrese los datos del documento a modificar</h2>
+                <p class="text-center" style="font-family: Roboto, sans-serif;font-weight: 500;font-size: 15px;">Recuerde que el numero de documento debe ser de 8 digitos.</p>
+                <div class="form-group"><input class="form-control" type="text" id="num1" name="num1" placeholder="Numero de documento" style="font-size: 15px;font-family: Poppins, sans-serif;"></div>
+                <div class="form-group"><input class="form-control" id="date1" name="date1" type="date" style="font-family: Poppins, sans-serif;font-size: 15px;color: rgb(49,52,55);"></div>
+                <div class="form-group" style="text-align: center;"><button class="btn btn-primary" id="modificar" type="submit" style="text-align: center;width: 296px;">Modificar&nbsp;</button></div>
+            </form>
+        </div>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
