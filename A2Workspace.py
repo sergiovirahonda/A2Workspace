@@ -211,7 +211,7 @@ def send_account_state():
                 build_excel(acc_balance_df,acc_result,client_result,num1)
                 #transforming excel file to pdf format so that's the business requirement.
                 excel_to_pdf(num1)
-                filepath = r'C:/Users/MARIA SANCHEZ/Documents/PythonProjects/A2Workspace/temp/'+num1+'.pdf'
+                filepath = r'C://Documents/PythonProjects/A2Workspace/temp/'+num1+'.pdf'
                 return send_file(filepath)
             except Exception as e:
                 abort(404)
@@ -390,7 +390,7 @@ def build_excel(acc_balance_df,acc_result,client_result,client_number):
         worksheet.set_column('F:F', 15,font_fmt)
         worksheet.set_column('G:G', 20,font_fmt)
         #Adding header and giving its format
-        worksheet.write('B2', 'Colegio de Contadores Públicos de Nicaragua',font_fmt2)
+        worksheet.write('B2', 'Colegio de Contadores Públicos',font_fmt2)
         worksheet.write('B3', 'Estado de cuenta',font_fmt1)
         #worksheet.write('B3', 'Cuentas por cobrar',font_fmt1)
         worksheet.write('G2', datetime.today().strftime('%d-%m-%Y'),font_fmt3)
@@ -402,7 +402,7 @@ def excel_to_pdf(client_number):
 
     """This function takes the excel file and transforms it into a pdf one which will be the final product."""
     # Path to original excel file
-    WB_PATH = r'C:/Users/MARIA SANCHEZ/Documents/PythonProjects/A2Workspace/temp/'+client_number+'.xlsx'
+    WB_PATH = r'C:/Users//Documents/PythonProjects/A2Workspace/temp/'+client_number+'.xlsx'
     # PDF path when saving
     PATH_TO_PDF = 'PythonProjects/A2Workspace/temp/'+client_number+'.pdf'
     excel = win32com.client.Dispatch("Excel.Application")
